@@ -65,9 +65,9 @@ Plantillas
 - Facilita el trabajo de realizar copias idénticas de la estructura.
 
 - Utilización de tipos como parámetros
-- Teniendo la ::función ordena(v)::. Dependerá del tipo de v para generar la función.
+- Teniendo la función ordena(v). Dependerá del tipo de v para generar la función.
 
-.. code-block:: ini
+.. code-block::
 
     template<class T> void ordena(T v[])  {
     
