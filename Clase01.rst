@@ -8,6 +8,15 @@ Clase 01 - PGE 2015
     :Autor: César Osimani
     :Correo: cosimani@ubp.edu.ar
     :Fecha: 7 de agosto de 2015
+    
+    :Regularidad:
+	- 2 parciales 
+	- 1 TPU como tercer parcial
+	- Presentación de trabajos en CoNaIISI 2015
+		- http://conaiisi2015.utn.edu.ar/fechas.html – Hasta 18 de septiembre
+		- Rinden sólo el 50% de cada parcial y no presentan TPU
+		- Pueden proponer otro congreso
+
 
 Introducción
 ============
@@ -38,14 +47,6 @@ Desventajas:
 	- Complicado para manejar los eventos a bajo nivel.
 
 
-Regularidad
-===========
-- 2 parciales 
-- 1 TPU como tercer parcial
-- Presentación de trabajos en CoNaIISI 2015
-	- http://conaiisi2015.utn.edu.ar/fechas.html – Hasta 18 de septiembre
-	- Rinden sólo el 50% de cada parcial y no presentan TPU
-	- Pueden proponer otro congreso
 
 
 
