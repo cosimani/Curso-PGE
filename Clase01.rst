@@ -68,6 +68,7 @@ Plantillas
 - Teniendo la función ordena(v). Dependerá del tipo de v para generar la función.
 
 .. code-block::
+
     template<class T> void ordena(T v[])  {
     
     }
@@ -87,6 +88,7 @@ Clase genérica Listado
 - La definición de la clase genérica Listado es la siguiente:
 
 .. code-block::
+
     template <class T> class Listado  {
     private:
         int cantidad;
