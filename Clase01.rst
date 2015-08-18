@@ -57,9 +57,26 @@ Desventajas:
 	- El hilo de ejecución se pierde de vista.
 	- Es un tanto abstracto, se maneja generalmente a alto nivel.
 	- Complicado para manejar los eventos a bajo nivel.
+	
+Plantillas
+==========
+- Separa la estructura del contenido.
+- Permite construir un diseño predefinido
+- Facilita el trabajo de realizar copias idénticas de la estructura.
 
+- Utilización de tipos como parámetros
+- Teniendo la función ordena(v). Dependerá del tipo de v para generar la función.
 
+.. code-block:: c++
+	template<class T> void ordena(T v[])  {
 
+	}
+
+- Mecanismo que permite usar un tipo como parámetro en una clase o función.
+- Clases genéricas: Es un “constructor” (o creador) de clases (no confundir con el constructor de una clase).
+- Para el diseño de una clase genérica es aconsejable ir de lo particular a lo general.
+- Primero diseñar y depurar una clase referido a un tipo concreto.
+- Libro: El lenguaje de programación C++ de Stroustrup - 13.1 - 13.2 - 13.2.1 - 13.2.2
 
 
 Instalación de Subversion
