@@ -20,24 +20,19 @@ Ventajas:
 	- Nos concentramos más en la lógica del sistema.
 
 Desventajas:
-
 	- Pérdida de interés para los amantes de la programación a bajo nivel.
 	- En C++ requiere el uso de Templates y sobrecarga de operadores, que es dificultoso y poco legible.
 
-
-Programación Orientada a Eventos: La ejecución está determinada por los sucesos que ocurran.
-
+**Programación Orientada a Eventos**: La ejecución está determinada por los sucesos que ocurran.
 	- Generalmente el usuario es el que dirige la ejecución del programa.
 	- Básicamente el programa queda bloqueado hasta producirse un evento.
 	- Es la base de la interfaz de usuario.
 
-Ventajas:
-
+*Ventajas*:
 	- Mejoras en las interfaces de usuario.
 	- Uso del mouse (o sea, hace tiempo estamos orientados a eventos)
 
-Desventajas:
-
+*Desventajas*:
 	- El hilo de ejecución se pierde de vista.
 	- Es un tanto abstracto, se maneja generalmente a alto nivel.
 	- Complicado para manejar los eventos a bajo nivel.
