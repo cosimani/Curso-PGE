@@ -16,18 +16,18 @@ Clase 01 - PGE 2015
 		- Rinden sólo el 50% de cada parcial y no presentan TPU
 		- Pueden proponer otro congreso
     :Temas principales: 
-		- Programación genérica y orientada a eventos
-		- Sobrecarga de operadores
-		- Uso de plantillas
-		- Manejo de excepciones
-		- Interface Humano Computadora
-		- Resolver los problemas consultando documentación técnica de distintas fuentes
-		- Funciones callback
-		- Manejo de imágenes a nivel píxel
-		- OpenGL
-		- OpenCV - Procesamiento de imágenes
-		- Creación de librerías
-		- Linux (buena opción para facilitar la disponibilidad de bibliotecas precompiladas)
+	- Programación genérica y orientada a eventos
+	- Sobrecarga de operadores
+	- Uso de plantillas
+	- Manejo de excepciones
+	- Interface Humano Computadora
+	- Resolver los problemas consultando documentación técnica de distintas fuentes
+	- Funciones callback
+	- Manejo de imágenes a nivel píxel
+	- OpenGL
+	- OpenCV - Procesamiento de imágenes
+	- Creación de librerías
+	- Linux (buena opción para facilitar la disponibilidad de bibliotecas precompiladas)
 
 
 Introducción
