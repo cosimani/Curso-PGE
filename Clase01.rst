@@ -14,14 +14,10 @@ Introducción
 
 **Programación Genérica**: Generalizar las funciones para que puedan ser utilizadas en varios casos.
 
-+Ventajas+
--fsdfsdf-
-•sdfsdf•
-‣fdsfsdfsdf‣
-
-	- Reutilización de código.
-	- Fácil mantenimiento de código.
-	- Nos concentramos más en la lógica del sistema.
+Ventajas:
+- Reutilización de código.
+- Fácil mantenimiento de código.
+- Nos concentramos más en la lógica del sistema.
 
 Desventajas:
 
