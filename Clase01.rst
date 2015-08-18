@@ -6,8 +6,6 @@
 Clase 01 - PGE 2015
 ===================
 
-.. sidebar:: Sobre este documento
-
     :Autor: César Osimani
     :Correo: cosimani@ubp.edu.ar
     :Fecha: 7 de agosto de 2015
