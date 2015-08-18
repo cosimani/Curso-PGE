@@ -2,44 +2,61 @@
 
 .. _rcs_subversion:
 
-==========================================
-Control de versiones utilizando Subversion
-==========================================
+===================
+Clase 01 - PGE 2015
+===================
 
-.. sidebar:: Sobre este artículo
+.. sidebar:: Sobre este documento
 
-    :Autor(es): Carlos de la Guardia, Leonardo J. Caballero G.
-    :Correo(s): carlos.delaguardia@gmail.com, leonardoc@plone.org
-    :Fecha: 21 de Marzo de 2015
+    :Autor: César Osimani
+    :Correo(s): cosimani@ubp.edu.ar
+    :Fecha: 7 de agosto de 2015
 
 Introducción
 ============
 
-`Subversion`_ es un sistema centralizado de control de versiones. En otras
-palabras, es un sistema que permite llevar el control de los cambios 
-realizados por una o mas personas a una serie de documentos a través del
-tiempo.
+Programación Genérica: Generalizar las funciones para que puedan ser utilizadas en varios casos.
 
-En un proyecto de Plone podemos tener docenas o centenares de documentos de
-diversos tipos, como HTML o código de Python. Dependiendo del tamaño de
-nuestro equipo de trabajo, los documentos pueden estar cambiando 
-constantemente y ser modificados por diversas personas. En el ciclo de
-trabajo diario, esta situación puede ocasionar cambios perdidos y severos
-problemas de coordinación, lo que degenera en tiempo perdido y baja de
-productividad para todos los miembros del equipo de desarrollo.
+Ventajas:
 
-Un sistema de control de versiones se encarga de llevar el control de 
-todas estas modificaciones a los documentos del proyecto. Un desarrollador
-solamente tiene que encargarse de guardar sus cambios al proyecto y el
-sistema se ocupa de integrarlos con los cambios de los otros miembros del
-equipo y de asegurarse de que no existan conflictos.
+	- Reutilización de código.
+	- Fácil mantenimiento de código.
+	- Nos concentramos más en la lógica del sistema.
 
-Adicionalmente, utilizar un sistema de control de versiones nos permite
-cosas como comparar la mas reciente versión de un documento con versiones
-anteriores, identificar quien ha realizado cuales cambios en el código y
-designar un conjunto de documentos específicos como una 'entrega' del
-proyecto que queda identificada con las versiones de cada uno de los
-documentos en el instante de la definición.
+Desventajas:
+
+	- Pérdida de interés para los amantes de la programación a bajo nivel.
+	- En C++ requiere el uso de Templates y sobrecarga de operadores, que es dificultoso y poco legible.
+
+
+Programación Orientada a Eventos: La ejecución está determinada por los sucesos que ocurran.
+
+	- Generalmente el usuario es el que dirige la ejecución del programa.
+	- Básicamente el programa queda bloqueado hasta producirse un evento.
+	- Es la base de la interfaz de usuario.
+
+Ventajas:
+
+	- Mejoras en las interfaces de usuario.
+	- Uso del mouse (o sea, hace tiempo estamos orientados a eventos)
+
+Desventajas:
+
+	- El hilo de ejecución se pierde de vista.
+	- Es un tanto abstracto, se maneja generalmente a alto nivel.
+	- Complicado para manejar los eventos a bajo nivel.
+
+
+Regularidad
+===========
+- 2 parciales 
+- 1 TPU como tercer parcial
+- Presentación de trabajos en CoNaIISI 2015
+	- http://conaiisi2015.utn.edu.ar/fechas.html – Hasta 18 de septiembre
+	- Rinden sólo el 50% de cada parcial y no presentan TPU
+	- Pueden proponer otro congreso
+
+
 
 Instalación de Subversion
 =========================
