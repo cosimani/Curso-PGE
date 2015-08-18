@@ -9,13 +9,13 @@ Clase 01 - PGE 2015
 .. sidebar:: Sobre este documento
 
     :Autor: César Osimani
-    :Correo(s): cosimani@ubp.edu.ar
+    :Correo: cosimani@ubp.edu.ar
     :Fecha: 7 de agosto de 2015
 
 Introducción
 ============
 
-Programación Genérica: Generalizar las funciones para que puedan ser utilizadas en varios casos.
+:Programación Genérica: Generalizar las funciones para que puedan ser utilizadas en varios casos.
 
 Ventajas:
 
