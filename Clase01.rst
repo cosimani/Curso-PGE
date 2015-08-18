@@ -67,10 +67,10 @@ Plantillas
 - Utilización de tipos como parámetros
 - Teniendo la función ordena(v). Dependerá del tipo de v para generar la función.
 
-.. code-block:: c
-	:template<class T> void ordena(T v[])  {
-	:
-	:}
+.. code-block:: ini
+	template<class T> void ordena(T v[])  {
+	
+	}
 
 - Mecanismo que permite usar un tipo como parámetro en una clase o función.
 - Clases genéricas: Es un “constructor” (o creador) de clases (no confundir con el constructor de una clase).
