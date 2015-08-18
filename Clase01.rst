@@ -68,7 +68,6 @@ Plantillas
 - Teniendo la función ordena(v). Dependerá del tipo de v para generar la función.
 
 .. code-block::
-
     template<class T> void ordena(T v[])  {
     
     }
@@ -78,6 +77,52 @@ Plantillas
 - Para el diseño de una clase genérica es aconsejable ir de lo particular a lo general.
 - Primero diseñar y depurar una clase referido a un tipo concreto.
 - Libro: El lenguaje de programación C++ de Stroustrup - 13.1 - 13.2 - 13.2.1 - 13.2.2
+
+Clase genérica Listado
+======================
+
+- Una plantilla genera la definición de una clase. 
+- A la instancia concreta de la clase generada, se la denomina especialización.
+
+- La definición de la clase genérica Listado es la siguiente:
+
+.. code-block::
+    template <class T> class Listado  {
+    private:
+        int cantidad;
+        int libre;
+        T *v;
+
+    public:
+        Listado(int n=10) : cantidad(n), libre(0), v(new T[n])  {  }
+        bool add(T nuevo);
+        T get(int i)  {  return v[i];  }
+        int length()  {  return libre;  }
+    };
+
+    template <class T> bool Listado<T>::add(T nuevo)  {
+        if (libre < cantidad)  {
+            v[libre] = nuevo;
+            libre++;
+            return true;
+        }
+        return false;
+    }
+
+
+- Observar que la definición de add() se realiza off-line con la sintaxis de una función genérica.
+
+- Miembros de clases genéricas definidas off-line: Deben ser declaradas como funciones genéricas.
+
+.. code-block::
+    template <class T> bool Listado<T>::add(T nuevo)  {
+
+        ////////////
+
+    }
+
+
+
 
 
 Instalación de Subversion
