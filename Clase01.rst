@@ -69,8 +69,8 @@ Plantillas
 
 .. code-block:: ini
 
-    [general]
     template<class T> void ordena(T v[])  {
+    
     }
 
 - Mecanismo que permite usar un tipo como parámetro en una clase o función.
