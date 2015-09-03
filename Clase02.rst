@@ -34,12 +34,12 @@ Sobrecarga de operadores
 	}
 
 	template <class T> bool Listado<T>::add(T nuevo)  {
-        if (libre < cantidad)  {
-            v[libre] = nuevo;
-            libre++;
-            return true;
-        }
-        return false;
+		if (libre < cantidad)  {
+			v[libre] = nuevo;
+			libre++;
+			return true;
+		}
+		return false;
 	}
 
 
@@ -48,22 +48,22 @@ Sobrecarga de operadores
 	template <class T> int Listado<T>::length() const  {  return libre;  }
 
 	template <class T> Listado<T> Listado<T>::operator+(const Listado<T> otro)  {
-        T vAux[this->length() + otro.length()];
+		T vAux[this->length() + otro.length()];
 
-        int contador = 0;
+		int contador = 0;
 
-        for ( ; contador<this->length() ; contador++)
-            vAux[contador] = this->get(contador);
+		for ( ; contador<this->length() ; contador++)
+			vAux[contador] = this->get(contador);
 
-        for (int i=0 ; contador < (this->length() + otro.length()) ; contador++, i++)
-            vAux[contador] = otro.get(i);
+		for (int i=0 ; contador < (this->length() + otro.length()) ; contador++, i++)
+			vAux[contador] = otro.get(i);
 
-        Listado<T> res(this->length() + otro.length());
+		Listado<T> res(this->length() + otro.length());
 
-        for (int j=0 ; j < contador ; j++)
-            res.add(vAux[j]);
+		for (int j=0 ; j < contador ; j++)
+			res.add(vAux[j]);
 
-        return res;
+		return res;
 	}
 
 
