@@ -46,24 +46,3 @@ Clase QCompleter
 
 **Ejercicio 2:** Hacer lo mismo pero la base de datos que sea un archivo SQLite.
 
-Copiar objetos
-==============
-
-.. figure:: images/clase03/copiar_objetos.png
-
-**Constructor copia**
-
-.. figure:: images/clase03/constructor_copia.png
-
-**Operador de asignación**
-
-.. figure:: images/clase03/operador_asignacion.png
-
-**Ejercicio:**
-	- Definir la clase Line que herede de QLineEdit
-	- Sobrecargar el operator+ para que:
-	
-	Line line = line1 + line2;	// Devuelve un Line con la suma de los textos
-
-
-
