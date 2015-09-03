@@ -16,16 +16,16 @@ Sobrecarga de operadores
 
 	template <class T> class Listado  {
 	public:
-        Listado(int n=10);
-        bool add(T nuevo);
-        T get(int i) const;
-        int length() const;
-        Listado<T> operator+(const Listado<T> otro);
+		Listado(int n=10);
+		bool add(T nuevo);
+		T get(int i) const;
+		int length() const;
+		Listado<T> operator+(const Listado<T> otro);
 
 	private:
-        int cantidad;
-        int libre;
-        T *v;
+		int cantidad;
+		int libre;
+		T *v;
 	};
 
 
