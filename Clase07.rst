@@ -81,7 +81,6 @@ Clase 07 - PGE 2015
 	}
 
 
-
 	/**
 	  * Método virtual de QObject para capturar eventos de teclado y de mouse. Se lo instala
 	  * llamando al método installEventFilter(). Si este método devuelve true entonces ninguna
@@ -133,7 +132,6 @@ Clase 07 - PGE 2015
 	}
 
 
-
 	/**
 	  * Cuando se pulsa enter o se hace clic sobre uno de los ítems sugeridos se llama a este método 
 	  * para desglosar el resultado y completar el QLineEdit.
@@ -151,11 +149,6 @@ Clase 07 - PGE 2015
 			ui->leBuscar->setText(item->text(0));
 		}
 	}
-
-
-
-
-
 
 
 	/**
@@ -187,8 +180,6 @@ Clase 07 - PGE 2015
 		// Completa el popup con las sugerencias
 		this->completarPopup(vectorCoincidencias);
 	}
-
-
 
 
 	/**
