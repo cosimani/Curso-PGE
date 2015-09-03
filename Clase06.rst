@@ -7,6 +7,7 @@ Clase 06 - PGE 2015
 
 **Creación y uso de librerías estáticas y dinámicas**
 
-.. resource:: resources/clase06/librerias.pdf
+.. figure:: images/clase06/portada_pdf.png
+	:target: resources/clase06/librerias.pdf
 
 
