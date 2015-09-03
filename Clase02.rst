@@ -8,7 +8,7 @@ Clase 02 - PGE 2015
 Sobrecarga de operadores 
 ========================
 
-.. figure:: images/clase01/regulador.png
+.. figure:: images/clase02/sobrecarga_operador.png
 
 **Ejercicio:** Modificar la clase genérica Listado sobrecargando operator+ de tal forma que al sumar dos listados se obtenga un nuevo objeto Listado con los elementos consecutivos.
 
