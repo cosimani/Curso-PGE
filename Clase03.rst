@@ -60,8 +60,8 @@ Copiar objetos
 .. figure:: images/clase03/operador_asignacion.png
 
 **Ejercicio:**
-- Definir la clase Line que herede de QLineEdit
-- Sobrecargar el operator+ para que:
+	- Definir la clase Line que herede de QLineEdit
+	- Sobrecargar el operator+ para que:
 	
 	Line line = line1 + line2;	// Devuelve un Line con la suma de los textos
 
