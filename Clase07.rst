@@ -265,18 +265,18 @@ Uso de una clase propia con QtDesigner
 
 
 **Ejercicio 4:**
-- Definir la clase TuLabel que herede de QLabel
-- Agregar un QLabel a la GUI y promoverlo a TuLabel
-- Agregar un método void cambiarTexto(QString nuevoTexto)
-- Usar ese método desde la clase Principal de la siguiente forma:
+	- Definir la clase TuLabel que herede de QLabel
+	- Agregar un QLabel a la GUI y promoverlo a TuLabel
+	- Agregar un método void cambiarTexto(QString nuevoTexto)
+	- Usar ese método desde la clase Principal de la siguiente forma:
 
 .. code-block::
 
 	ui->tuLabel->cambiarTexto("Sos un TuLabel?");
 
 **Ejercicio 5:**
-- En una nueva aplicación utilizar la clase Line con la característica de sugerencias
-- Diseñar la GUI con QtDesigner usando QLineEdit y promoverlo a Line
+	- En una nueva aplicación utilizar la clase Line con la característica de sugerencias
+	- Diseñar la GUI con QtDesigner usando QLineEdit y promoverlo a Line
 
 
 
