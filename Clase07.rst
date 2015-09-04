@@ -212,7 +212,12 @@ Clase 07 - PGE 2015
 	}
 
 
-**Ejercicio:** Hacerlo funcionar.
+**Ejercicio 1:** Hacerlo funcionar.
+
+**Ejercicio 2:** En lugar de utilizar un QStringList como base de datos, utilizar una base de datos SQLite
+
+**Ejercicio 3:** Agregar esta caracter[istica de autocompletado a la clase Line.
+
 
 QMainWindow
 ===========
