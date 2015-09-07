@@ -219,24 +219,6 @@ Clase 07 - PGE 2015
 **Ejercicio 3:** Agregar esta característica de autocompletado a la clase Line.
 
 
-QMainWindow
-===========
-
-.. figure:: images/clase07/qmainwindow.png
-
-**QAction**
-
-.. figure:: images/clase07/qaction.png
-
-**QIcon**
-
-.. figure:: images/clase07/qicon.png
-
-**Ejercicio:** Editor de  código fuente C++
-
-.. figure:: images/clase07/ejercicio.png
-
-
 Uso de una clase propia con QtDesigner
 ======================================
 
