@@ -29,7 +29,8 @@ Clase 08 - PGE 2015
 	- Base de datos con SQlite (SELECT e INSERT)
 	- QWidgets propios en QtDesigner
 	- QMainWindow (widget central, RESOURCES, QActions, etc.)
-	
+	- typeid
+	- static
 
 
 
