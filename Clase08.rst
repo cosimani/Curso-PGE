@@ -28,7 +28,7 @@ Clase 08 - PGE 2015
 	- Constructor copia y operador de asignación
 	- Template (Clases genéricas, herencia, argumento por defecto, etc.)
 	- Creación y uso de librerías dinámicas y estáticas
-	- Base de datos con SQlite (SELECT e INSERT)
+	- Base de datos con SQLite (SELECT e INSERT)
 	- QWidgets propios en QtDesigner
 	- QMainWindow (widget central, RESOURCES, QActions, etc.)
 	- typeid
