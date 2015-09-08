@@ -17,8 +17,7 @@ Clase 08 - PGE 2015
 
 .. figure:: images/clase08/qicon.png
 
-- Buscar íconos aquí
-   :target: http://findicons.com/
+:Buscar íconos aquí: http://findicons.com/
 
 **Ejercicio:** Editor de  código fuente C++
 
