@@ -50,6 +50,31 @@ Variables estáticas
 
 .. figure:: images/clase09/ejercicio3.png
 
+Base de datos con SQLite
+========================
+
+.. figure:: images/clase09/sqlite1.png
+
+.. figure:: images/clase09/sqlite2.png
+
+.. figure:: images/clase09/sqlite3.png
+
+**Ejercicio 4**
+
+.. figure:: images/clase09/ejercicio4.png
+
+.. figure:: images/clase09/ejercicio4a.png
+
+.. figure:: images/clase09/ejercicio4b.png
+
+**Para independizar del SO**
+
+.. figure:: images/clase09/independizar.png
+
+
+
+
+
 
 
 
