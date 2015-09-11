@@ -2,38 +2,24 @@
 
 .. _rcs_subversion:
 
-Clase 08 - PGE 2015
+Clase 09 - PGE 2015
 ===================
 
-**QMainWindow**
+**typeid**
 
-.. figure:: images/clase08/qmainwindow.png
+.. figure:: images/clase09/typeid.png
 
-**QAction**
+**Clase type_info**
 
-.. figure:: images/clase08/qaction.png
+.. figure:: images/clase09/type_info.png
 
-**QIcon**
+**Ejercicio 1**
 
-.. figure:: images/clase08/qicon.png
+.. figure:: images/clase09/ejercicio1.png
 
-:Buscar íconos aquí: http://findicons.com/
+**Ejercicio 2**
 
-**Ejercicio:** Editor de  código fuente C++
-
-.. figure:: images/clase08/ejercicio.png
-
-**Temas para el parcial**
-	- Sobrecarga de operadores
-	- Constructor copia y operador de asignación
-	- Template (Clases genéricas, herencia, argumento por defecto, etc.)
-	- Creación y uso de librerías dinámicas y estáticas
-	- Base de datos con SQLite (SELECT e INSERT)
-	- QWidgets propios en QtDesigner
-	- QMainWindow (widget central, RESOURCES, QActions, etc.)
-	- typeid
-	- static
-
+.. figure:: images/clase09/ejercicio2.png
 
 
 
