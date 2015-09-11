@@ -11,11 +11,13 @@ Clase 09 - PGE 2015
 
 **Clase type_info**
 
-	- Dispone de un método para pregunta si es puntero y otro para puntero a función:
+- Dispone de un método para pregunta si es puntero y otro para puntero a función:
 		    
-		virtual bool __is_pointer_p() const;
-    
-		virtual bool __is_function_p() const;
+.. code-block::
+			
+	virtual bool __is_pointer_p() const;
+   
+	virtual bool __is_function_p() const;
 
 
 .. figure:: images/clase09/type_info.png
