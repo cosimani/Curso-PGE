@@ -21,7 +21,8 @@ Clase 09 - PGE 2015
 
 .. figure:: images/clase09/ejercicio2.png
 
-**Variables estáticas**
+Variables estáticas
+===================
 
 .. figure:: images/clase09/variables_estaticas.png
 
