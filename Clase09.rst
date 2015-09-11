@@ -11,7 +11,7 @@ Clase 09 - PGE 2015
 
 **Clase type_info**
 
-- Dispone de un método para pregunta si es puntero y otro para puntero a función:
+- Dispone de un método para preguntar si es puntero y otro método para saber si es puntero a función:
 		    
 .. code-block::
 			
