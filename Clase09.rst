@@ -71,7 +71,11 @@ Base de datos con SQLite
 
 .. figure:: images/clase09/independizar.png
 
+**Consulta a la base de datos**
 
+.. figure:: images/clase09/consultar1.png
+
+.. figure:: images/clase09/consultar2.png
 
 
 
