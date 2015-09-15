@@ -10,17 +10,15 @@ Clase 10 - PGE 2015
 - Crear una aplicación con un QCameraViewfinder promovido a QWidget en QtDesigner
 - Un botón "Mostrar imagen" para que encienda la cámara y muestre la imagen
 
-**Resolución**
-
-	:target: https://github.com/cosimani/Curso-PGE-2015/tree/master/sources/clase10/camera
-
-
-
-
-
-Ejercicio 2:
+**Ejercicio 2:**
 - Una aplicación que complete un QComboBox con las cámaras disponibles
 - Un QPushButton para iniciar la cámara seleccionada
+
+**Resolución**
+
+:target: https://github.com/cosimani/Curso-PGE-2015/tree/master/sources/clase10/camera
+
+
 
 
 - Análisis pixel a pixel. Ejemplo: Dejar sólo el componente rojo
