@@ -12,6 +12,10 @@ Clase 10 - PGE 2015
 
 **Resolución**
 
+	:target: sources/clase10/camera
+
+
+
 
 
 Ejercicio 2:
