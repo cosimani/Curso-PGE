@@ -11,6 +11,7 @@ Clase 10 - PGE 2015
 - Un botón "Mostrar imagen" para que encienda la cámara y muestre la imagen
 
 **Ejercicio 2:**
+
 - Una aplicación que complete un QComboBox con las cámaras disponibles
 - Un QPushButton para iniciar la cámara seleccionada
 
