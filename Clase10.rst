@@ -12,7 +12,7 @@ Clase 10 - PGE 2015
 
 **Resolución**
 
-	:target: sources/clase10/camera
+	:target: https://github.com/cosimani/Curso-PGE-2015/tree/master/sources/clase10/camera
 
 
 
