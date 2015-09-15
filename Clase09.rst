@@ -135,6 +135,7 @@ Utilización de cámaras de video con Qt
 	#endif // VISOR_H
 
 **Ejercicio 1:**
+
 - Crear una aplicación con un QCameraViewfinder promovido a QWidget en QtDesigner
 - Un botón "Mostrar imagen" para que encienda la cámara y muestre la imagen
 
