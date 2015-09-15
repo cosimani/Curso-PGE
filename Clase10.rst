@@ -21,7 +21,7 @@ Clase 10 - PGE 2015
 
 **Análisis pixel a pixel**
 
-- Ejemplo: Dejar sólo el componente rojo**
+- Ejemplo: Dejar sólo el componente rojo
 
 .. code-block::
 
