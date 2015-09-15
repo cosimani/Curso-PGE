@@ -19,10 +19,9 @@ Clase 10 - PGE 2015
 
 :target: https://github.com/cosimani/Curso-PGE-2015/tree/master/sources/clase10/camera
 
+**Análisis pixel a pixel. Ejemplo: Dejar sólo el componente rojo**
 
-
-
-- Análisis pixel a pixel. Ejemplo: Dejar sólo el componente rojo
+.. code-block::
 
     QPixmap pixMap = ui->visor->grab();  // Para llevar el QWidget a QImage
     QImage image = pixMap.toImage();
@@ -35,8 +34,8 @@ Clase 10 - PGE 2015
         }
     }
 
+**Ejercicio 3:**
 
-Ejercicio 3:
 - Agregar un QPushButton "Capturar imagen" para procesarla
 - Dibujar con paintEvent esa imagen procesada 
 - Procesar la imagen con lo siguiente:
