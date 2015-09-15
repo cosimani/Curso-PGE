@@ -19,7 +19,9 @@ Clase 10 - PGE 2015
 
 :Código fuente: https://github.com/cosimani/Curso-PGE-2015/tree/master/sources/clase10/camera
 
-**Análisis pixel a pixel. Ejemplo: Dejar sólo el componente rojo**
+**Análisis pixel a pixel**
+
+- Ejemplo: Dejar sólo el componente rojo**
 
 .. code-block::
 
