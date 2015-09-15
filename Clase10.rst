@@ -42,9 +42,8 @@ Clase 10 - PGE 2015
 	- Invertir los colores rgb a bgr
 	- Transformar a escala de grises
 		Y = 0.3 R + 0.3 G + 0.3 B // Y en cada componente
-	- Convertir al negativo: 
-		Cada componente, si lo leemos en binario, debemos invertir cada bit.
-		Ejemplo: R=144=10010000 -> R=01101111
+	- Convertir al negativo: Cada componente, si lo leemos en binario, debemos invertir cada bit.
+		- Ejemplo: R=144=10010000 -> R=01101111
 
 
 
