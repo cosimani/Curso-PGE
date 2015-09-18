@@ -19,6 +19,7 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 
 
 .. code-block:: c
+:linenothreshold: 1
 
 bool QAbstractVideoSurface::present ( const QVideoFrame & frame ) [pure virtual]
 
