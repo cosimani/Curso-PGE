@@ -63,7 +63,9 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 
 .. code-block:: c++
 
-	QList<QVideoFrame::PixelFormat> Capturador::supportedPixelFormats(QAbstractVideoBuffer::HandleType handleType) const  {
+	QList<QVideoFrame::PixelFormat> 
+	Capturador::supportedPixelFormats(QAbstractVideoBuffer::HandleType handleType) const  {
+	
 		if (handleType == QAbstractVideoBuffer::NoHandle) {
 			return QList<QVideoFrame::PixelFormat>()
 					<< QVideoFrame::Format_RGB32
@@ -71,15 +73,13 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 		} else {
 			return QList<QVideoFrame::PixelFormat>();
 		}
+		
 	}
 
 
 **El constructor**
 
 .. code-block:: c++
-   :caption: Read Hacker News on a budget
-   :url: http://news.ycombinator.com
-   :title: Hacker News
 
 	Capturador::Capturador(QObject *parent) : QAbstractVideoSurface(parent)  {
 
@@ -144,7 +144,15 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR); 
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR); 
 
-		glTexImage2D(GL_TEXTURE_2D, 0, 3, frameActual.width(), frameActual.height(), 0, GL_BGRA, GL_UNSIGNED_BYTE, texturaCamara);
+		glTexImage2D(GL_TEXTURE_2D, 
+					 0, 
+					 3, 
+					 frameActual.width(), 
+					 frameActual.height(), 
+					 0, 
+					 GL_BGRA, 
+					 GL_UNSIGNED_BYTE, 
+					 texturaCamara);
 	}
 
 **Ejercicio 1:**
