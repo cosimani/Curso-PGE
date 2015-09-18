@@ -22,7 +22,8 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 	bool QAbstractVideoSurface::present ( const QVideoFrame & frame ) [pure virtual]
 
 
-**Clase ``Capturador`` para obtener los frames de la cámara**
+Clase Capturador para obtener los frames de la cámara
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: c++
 
