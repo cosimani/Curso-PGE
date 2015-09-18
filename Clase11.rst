@@ -145,14 +145,14 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR); 
 
 		glTexImage2D(GL_TEXTURE_2D, 
-					 0, 
-					 3, 
-					 frameActual.width(), 
-					 frameActual.height(), 
-					 0, 
-					 GL_BGRA, 
-					 GL_UNSIGNED_BYTE, 
-					 texturaCamara);
+		             0, 
+		             3, 
+		             frameActual.width(), 
+		             frameActual.height(), 
+		             0, 
+		             GL_BGRA, 
+		             GL_UNSIGNED_BYTE, 
+		             texturaCamara);
 	}
 
 **Ejercicio 1:**
