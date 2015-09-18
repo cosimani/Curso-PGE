@@ -18,7 +18,6 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 - Proporciona streaming de video a través de la función virtual pura present()
 
 .. code-block:: c
-	:linenothreshold: 1
 
 	bool QAbstractVideoSurface::present ( const QVideoFrame & frame ) [pure virtual]
 
