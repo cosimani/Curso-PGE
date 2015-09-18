@@ -17,7 +17,7 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 - QAbstractVideoSurface es una clase abstracta
 - Proporciona streaming de video a través de la función virtual pura present()
 
-.. code-block:: c
+.. code-block:: c++
 
 	bool QAbstractVideoSurface::present ( const QVideoFrame & frame ) [pure virtual]
 
@@ -48,7 +48,7 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 - Para acceder a los bits es necesario mapearlo con el método map()
 - El mapeo deja en memoria los datos para se accedidos.
 
-.. code-block::
+.. code-block:: c++
 
 	bool Capturador::present(const QVideoFrame &frame)  {
 		frameActual = frame;
@@ -61,7 +61,7 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 
 - La función virtual pura supportedPixelFormats() devuelve un listado de formatos soportados.
 
-.. code-block::
+.. code-block:: c++
 
 	QList<QVideoFrame::PixelFormat> Capturador::supportedPixelFormats(QAbstractVideoBuffer::HandleType handleType) const  {
 		if (handleType == QAbstractVideoBuffer::NoHandle) {
@@ -76,7 +76,7 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 
 **El constructor**
 
-.. code-block::
+.. code-block:: c++
 
 	Capturador::Capturador(QObject *parent) : QAbstractVideoSurface(parent)  {
 
@@ -84,7 +84,7 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 
 **Podemos ahora llevar las imágenes de la cámara como textura a OpenGL**
 
-.. code-block::
+.. code-block:: c++
 
 	class Visual : public Ogl  {
 		Q_OBJECT
