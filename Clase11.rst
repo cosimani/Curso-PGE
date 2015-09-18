@@ -17,33 +17,32 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 - QAbstractVideoSurface es una clase abstracta
 - Proporciona streaming de video a través de la función virtual pura present()
 
-
 .. code-block:: c
 	:linenothreshold: 1
 
-bool QAbstractVideoSurface::present ( const QVideoFrame & frame ) [pure virtual]
+	bool QAbstractVideoSurface::present ( const QVideoFrame & frame ) [pure virtual]
 
 
 **Clase 'Capturador' para obtener los frames de la cámara**
 
 .. code-block::
 
-class Capturador : public QAbstractVideoSurface  {
-    Q_OBJECT
+	class Capturador : public QAbstractVideoSurface  {
+		Q_OBJECT
 
-public:
-    Capturador(QObject *parent = 0);
+	public:
+		Capturador(QObject *parent = 0);
 
-    QList<QVideoFrame::PixelFormat> supportedPixelFormats(
-            QAbstractVideoBuffer::HandleType handleType = QAbstractVideoBuffer::NoHandle) const;
+		QList<QVideoFrame::PixelFormat> supportedPixelFormats(
+				QAbstractVideoBuffer::HandleType handleType = QAbstractVideoBuffer::NoHandle) const;
 
-    bool present(const QVideoFrame &frame);
+		bool present(const QVideoFrame &frame);
 
-    QVideoFrame getFrameActual()  {  return frameActual;  }
+		QVideoFrame getFrameActual()  {  return frameActual;  }
 
-private:
-    QVideoFrame frameActual;
-};
+	private:
+		QVideoFrame frameActual;
+	};
 
 
 - QVideoFrame encapsula los datos de video (bits, ancho, alto, etc.)
@@ -52,97 +51,99 @@ private:
 
 .. code-block::
 
-bool Capturador::present(const QVideoFrame &frame)  {
-    frameActual = frame;
-    
-    frameActual.map(QAbstractVideoBuffer::ReadOnly);
-    
-    return true;  // Con la idea de devolver true si este frame fue usado
-}
+	bool Capturador::present(const QVideoFrame &frame)  {
+		frameActual = frame;
+		
+		frameActual.map(QAbstractVideoBuffer::ReadOnly);
+		
+		return true;  // Con la idea de devolver true si este frame fue usado
+	}
 
 
 - La función virtual pura supportedPixelFormats() devuelve un listado de formatos soportados.
 
 .. code-block::
 
-QList<QVideoFrame::PixelFormat> Capturador::supportedPixelFormats(QAbstractVideoBuffer::HandleType handleType) const  {
-    if (handleType == QAbstractVideoBuffer::NoHandle) {
-        return QList<QVideoFrame::PixelFormat>()
-                << QVideoFrame::Format_RGB32
-                << QVideoFrame::Format_ARGB32;
-    } else {
-        return QList<QVideoFrame::PixelFormat>();
-    }
-}
+	QList<QVideoFrame::PixelFormat> Capturador::supportedPixelFormats(QAbstractVideoBuffer::HandleType handleType) const  {
+		if (handleType == QAbstractVideoBuffer::NoHandle) {
+			return QList<QVideoFrame::PixelFormat>()
+					<< QVideoFrame::Format_RGB32
+					<< QVideoFrame::Format_ARGB32;
+		} else {
+			return QList<QVideoFrame::PixelFormat>();
+		}
+	}
 
 
 **El constructor**
 
-Capturador::Capturador(QObject *parent) : QAbstractVideoSurface(parent)  {
+.. code-block::
 
-}
+	Capturador::Capturador(QObject *parent) : QAbstractVideoSurface(parent)  {
+
+	}
 
 **Podemos ahora llevar las imágenes de la cámara como textura a OpenGL**
 
 .. code-block::
 
-class Visual : public Ogl  {
-    Q_OBJECT
-public:
-    Visual();
-    void iniciarCamara();
+	class Visual : public Ogl  {
+		Q_OBJECT
+	public:
+		Visual();
+		void iniciarCamara();
 
-protected:
-    void initializeGL();
-    void resizeGL(int ancho, int alto);
-    void paintGL();
+	protected:
+		void initializeGL();
+		void resizeGL(int ancho, int alto);
+		void paintGL();
 
-private:
-    Capturador * capturador;
-    QCamera * camera;
+	private:
+		Capturador * capturador;
+		QCamera * camera;
 
-    void cargarTexturas();
-    void cargarTexturaCamara();
+		void cargarTexturas();
+		void cargarTexturaCamara();
 
-    unsigned char *texturaCielo;
-    unsigned char *texturaMuro;
-    GLuint idTextura[2];
+		unsigned char *texturaCielo;
+		unsigned char *texturaMuro;
+		GLuint idTextura[2];
 
-    unsigned char *texturaCamara;
-    GLuint idTexturaCamara[1];
-};
-
-
-void Visual::iniciarCamara()  {
-    capturador = new Capturador;
-
-    QList<QCameraInfo> cameras = QCameraInfo::availableCameras();
-
-    for (int i=0 ; i<cameras.size() ; i++)  {
-        qDebug() << cameras.at(i).description();
-
-        if (cameras.at(i).description().contains("Truevision", Qt::CaseInsensitive))  {
-            camera = new QCamera(cameras.at(i));
-            camera->setViewfinder(capturador);
-            camera->start(); // to start the viewfinder
-        }
-    }
-
-    glGenTextures(1, idTexturaCamara);
-}
+		unsigned char *texturaCamara;
+		GLuint idTexturaCamara[1];
+	};
 
 
-void Visual::cargarTexturaCamara()  {
+	void Visual::iniciarCamara()  {
+		capturador = new Capturador;
 
-    QVideoFrame frameActual = capturador->getFrameActual();
-    texturaCamara = frameActual.bits();
+		QList<QCameraInfo> cameras = QCameraInfo::availableCameras();
 
-    glBindTexture(GL_TEXTURE_2D, idTexturaCamara[0]);  // Activamos idTextura.
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR); 
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR); 
+		for (int i=0 ; i<cameras.size() ; i++)  {
+			qDebug() << cameras.at(i).description();
 
-    glTexImage2D(GL_TEXTURE_2D, 0, 3, frameActual.width(), frameActual.height(), 0, GL_BGRA, GL_UNSIGNED_BYTE, texturaCamara);
-}
+			if (cameras.at(i).description().contains("Truevision", Qt::CaseInsensitive))  {
+				camera = new QCamera(cameras.at(i));
+				camera->setViewfinder(capturador);
+				camera->start(); // to start the viewfinder
+			}
+		}
+
+		glGenTextures(1, idTexturaCamara);
+	}
+
+
+	void Visual::cargarTexturaCamara()  {
+
+		QVideoFrame frameActual = capturador->getFrameActual();
+		texturaCamara = frameActual.bits();
+
+		glBindTexture(GL_TEXTURE_2D, idTexturaCamara[0]);  // Activamos idTextura.
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR); 
+		glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR); 
+
+		glTexImage2D(GL_TEXTURE_2D, 0, 3, frameActual.width(), frameActual.height(), 0, GL_BGRA, GL_UNSIGNED_BYTE, texturaCamara);
+	}
 
 **Ejercicio 1:**
 
