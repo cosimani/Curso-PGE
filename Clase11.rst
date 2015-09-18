@@ -5,7 +5,7 @@
 Clase 11 - PGE 2015
 ===================
 
-**CLI -> GUI -> NUI**
+**CLI >> GUI >> NUI**
 
 .. figure:: images/clase11/cli_gui_nui.png
 	:target: https://prezi.com/_iqvhrobpe0p/desarrollo/
