@@ -248,7 +248,10 @@ Uso de atributos estáticos
 - En el ejemplo de la clase Archivador, es necesario intanciar un objeto Archivador para poder usarlo.
 - Intente instanciar un objeto Archivador de manera estática.
 	
+TPU
+===
 
+.. figure:: images/clase11/tpu.png	
 
 
 
