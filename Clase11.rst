@@ -158,6 +158,7 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 **Ejercicio 1:**
 
 - Crear una escena con OpenGL con glOrtho para mostrar como textura las imágenes de la cámara en un QUADS.
+- Luego probar con gluPerspective
 	
 **Ejercicio 2:**
 
