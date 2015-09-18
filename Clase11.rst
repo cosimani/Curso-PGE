@@ -9,11 +9,13 @@ Clase 11 - PGE 2015
 
 .. figure:: images/clase11/cli_gui_nui.png
 	:target: https://prezi.com/_iqvhrobpe0p/desarrollo/
+
 	
 **Levantar frame por frame: Clase QAbstractVideoSurface**
 
 - QAbstractVideoSurface es una clase abstracta
 - Proporciona streaming de video a través de la función virtual pura present()
+
 
 .. code-block::
 
