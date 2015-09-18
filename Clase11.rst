@@ -157,6 +157,10 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 
 **Ejercicio 1:**
 
+- Crear una escena con OpenGL con glOrtho para mostrar como textura las imágenes de la cámara en un QUADS.
+	
+**Ejercicio 2:**
+
 - Crear una aplicación para mostrar una escena 3D con OpenGL que tenga las siguientes características:
 	- Utilizar la clase Ogl
 	- La escena tendrá un cielo como se muestra a continuación:
@@ -178,12 +182,12 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 
 .. figure:: images/clase11/escena.png
 
-**Ejercicio 2:**
+**Ejercicio 3:**
 
 - Usar el ejercicio anterior
 - Colgar de la tapia del fondo un monitor LCD mostrando las imágenes de la cámara
 
-**Ejercicio 3:**
+**Ejercicio 4:**
 
 - En el medio del escenario tapia-piso-cielo dibujar un cubo girando
 - Pegar la textura de la cámara en cada lado del cubo
@@ -234,7 +238,7 @@ Uso de atributos estáticos
 	#endif // ARCHIVADOR_H
 
 
-**Ejercicio 4:**
+**Ejercicio 5:**
 
 - En el ejemplo de la clase Archivador, es necesario intanciar un objeto Archivador para poder usarlo.
 - Intente instanciar un objeto Archivador de manera estática.
