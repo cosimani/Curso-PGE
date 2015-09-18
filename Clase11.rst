@@ -188,8 +188,56 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 - En el medio del escenario tapia-piso-cielo dibujar un cubo girando
 - Pegar la textura de la cámara en cada lado del cubo
 
+Uso de atributos estáticos
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: c++
+
+	#ifndef ARCHIVADOR_H
+	#define ARCHIVADOR_H
+
+	#include <QFile>
+	#include <QTextStream>
+
+	class Archivador  {
+	private:
+		static QFile *file;
+
+	public:
+		static bool abrir(QString ruta);
+		static bool almacenar(QString texto);
+	};
+
+	QFile * Archivador::file = new QFile("./defecto.txt");
 
 
+	bool Archivador::abrir(QString ruta)  {
+		file->setFileName(ruta);
+
+		if (!file->exists())  {
+			return false;
+		}
+
+		return file->open(QIODevice::Append | QIODevice::Text);
+	}
+
+	bool Archivador::almacenar(QString texto)  {
+		if (!file->isOpen())
+			return false;
+
+		QTextStream salida(file);
+		salida << texto;
+
+		return true;
+	}
+
+	#endif // ARCHIVADOR_H
+
+
+**Ejercicio 4:**
+
+- En el ejemplo de la clase Archivador, es necesario intanciar un objeto Archivador para poder usarlo.
+- Intente instanciar un objeto Archivador de manera estática.
 	
 
 
