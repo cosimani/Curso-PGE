@@ -157,10 +157,31 @@ Levantar frame por frame: Clase QAbstractVideoSurface
 
 **Ejercicio 1:**
 
-- Usar el ejercicio del primer parcial
-- Colgar de la tapia del fondo un monitor LCD mostrando las imágenes de la cámara
+- Crear una aplicación para mostrar una escena 3D con OpenGL que tenga las siguientes características:
+	- Utilizar la clase Ogl
+	- La escena tendrá un cielo como se muestra a continuación:
+
+.. figure:: images/clase11/cielo.jpg
+	:target: http://img02.bibliocad.com/biblioteca/image/00010000/4000/cieloclaro_14054.jpg
+
+- Ahora agregar una textura para el piso. Esta textura deberá repetirse para que quede similar a la siguiente figura:
+
+.. figure:: images/clase11/tierra.jpg
+	:target: http://www.textureimages.net/uploads/6/1/2/6/6126732/8772372_orig.jpg
+
+- Dibujar ahora un muro al final del camino. Que la textura se repita también. 
+
+.. figure:: images/clase11/pared.jpg
+	:target: http://img02.bibliocad.com/biblioteca/image/00030000/0000/muropiedratextura_30115.jpg
+	
+- Utilizando las teclas UP y DOWN generar el efecto de avanzar y retroceder. Que no permita irse más allá del muro y que no permita retroceder más del punto inicial de partida.
 
 **Ejercicio 2:**
+
+- Usar el ejercicio anterior
+- Colgar de la tapia del fondo un monitor LCD mostrando las imágenes de la cámara
+
+**Ejercicio 3:**
 
 - En el medio del escenario tapia-piso-cielo dibujar un cubo girando
 - Pegar la textura de la cámara en cada lado del cubo
