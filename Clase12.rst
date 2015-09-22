@@ -18,9 +18,12 @@ Ejemplos de ejercicios del primer parcial
 
 **Ejercicio 2:**
 
-- En un proyecto nuevo, utilizar la librería generada en el ejercicio 1 para crear la siguiente GUI:
+- En un proyecto nuevo, utilizar la librería generada en el ejercicio 1 para crear la GUI de la siguiente figura.
+- Los 3 campos de texto son objetos de LineaDeTexto promovidos a QLineEdit dentro del QtDesigner.
+- Presionando el QPushButton se realiza la concatenación de los textos con el operator+ de LineaDeTexto y se muestra el resultado en el tercer campo de texto.
 
 .. figure:: images/clase12/ejercicio1.png
+
 
 
 
