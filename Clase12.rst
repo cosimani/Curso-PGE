@@ -24,8 +24,9 @@ Ejemplos de ejercicios del primer parcial
 
 .. figure:: images/clase12/ejercicio1.png
 
-..
-..
+\\
+\\
+\\
 
 **Ejercicio 3:**
 
