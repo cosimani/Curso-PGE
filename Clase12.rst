@@ -24,10 +24,6 @@ Ejemplos de ejercicios del primer parcial
 
 .. figure:: images/clase12/ejercicio1.png
 
-\\
-\\
-\\
-
 **Ejercicio 3:**
 
 - Incorporar a la clase LineaDeTexto del ejercicio 1 la característica del popup para sugerencias.
