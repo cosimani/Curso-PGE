@@ -13,10 +13,8 @@ Ejemplos de ejercicios del primer parcial
 - Se adjunta el código fuente para que sea compilado en una librería estática.
 - Separar en distintas carpetas los archivos de cabecera y la librería estática (por ejemplo, en las carpetas 'includes' y 'libs'
 
-.. figure:: images/clase06/primer_parcial_1_proteus.png
+.. figure:: images/clase12/descargarFuenteEjercicio1.png
    :target: sources/clase12/LineaDeTextoLib.rar
-
-:Código fuente para compilar (descargar desde View Raw): sources/clase12/LineaDeTextoLib.rar
 
 **Ejercicio 2:**
 
