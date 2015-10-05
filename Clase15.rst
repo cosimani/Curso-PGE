@@ -55,29 +55,29 @@ Tratamiento de excepciones
 
 	class Archivador  {
 	private:
-		static QFile *file;
+	    static QFile *file;
 
 	public:
-		static bool abrir(QString ruta)  {
-			file->setFileName(ruta);
+	    static bool abrir(QString ruta)  {
+		    file->setFileName(ruta);
 
-			if (!file->exists())  {
-				throw ExcNoArchivo(ruta);
-				return false;
-			}
+		    if (!file->exists())  {
+			    throw ExcNoArchivo(ruta);
+			    return false;
+		    }
 
-			return file->open(QIODevice::Append | QIODevice::Text);
-		}
+		    return file->open(QIODevice::Append | QIODevice::Text);
+	    } 
 
-		static bool almacenar(QString texto)  {
-			if (!file->isOpen())
-				return false;
+	    static bool almacenar(QString texto)  {
+		    if (!file->isOpen())
+			    return false;
 
-			QTextStream salida(file);
-			salida << texto;
+		    QTextStream salida(file);
+		    salida << texto;
 
-			return true;
-		}
+		    return true;
+	    }
 	};
 	
 	QFile * Archivador::file = new QFile("./defecto.txt");
