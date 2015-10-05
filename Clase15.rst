@@ -20,25 +20,25 @@ Tratamiento de excepciones
 
 	class ExcRango  {
 	private:
-		QString mensaje;
+	    QString mensaje;
 	public:
-		ExcRango(QString mensaje, int i) : mensaje(mensaje)  {   }
-		QString getMensaje()  {  return mensaje;  }
+	    ExcRango(QString mensaje, int i) : mensaje(mensaje)  {   }
+	    QString getMensaje()  {  return mensaje;  }
 	};
 
 	class ExcNoArchivo  {
 	private:
-		QString archivo;
-		QString mensaje;
+	    QString archivo;
+	    QString mensaje;
 
 	public:
-		ExcNoArchivo(QString archivo) : archivo(archivo)  {
-			QFile file(archivo);
-			if (!file.exists())
-				mensaje.operator=("El archivo " + archivo + " no existe.");
-		}
+	    ExcNoArchivo(QString archivo) : archivo(archivo)  {
+	        QFile file(archivo);
+	        if (!file.exists())
+	            mensaje.operator=("El archivo " + archivo + " no existe.");
+	    }
 
-		QString getMensaje()  {  return mensaje;  }
+	    QString getMensaje()  {  return mensaje;  }
 	};
 
 	#endif // EXCEPCIONES_H
@@ -59,27 +59,27 @@ Tratamiento de excepciones
 
 	public:
 	    static bool abrir(QString ruta)  {
-		    file->setFileName(ruta);
+	        file->setFileName(ruta);
 
-		    if (!file->exists())  {
-			    throw ExcNoArchivo(ruta);
-			    return false;
-		    }
+	        if (!file->exists())  {
+	            throw ExcNoArchivo(ruta);
+	            return false;
+	        }
 
-		    return file->open(QIODevice::Append | QIODevice::Text);
+	        return file->open(QIODevice::Append | QIODevice::Text);
 	    } 
 
 	    static bool almacenar(QString texto)  {
-		    if (!file->isOpen())
-			    return false;
+	        if (!file->isOpen())
+	        return false;
 
-		    QTextStream salida(file);
-		    salida << texto;
-
-		    return true;
+	        QTextStream salida(file);
+	        salida << texto;
+ 
+	        return true;
 	    }
 	};
-	
+
 	QFile * Archivador::file = new QFile("./defecto.txt");
 
 	#endif // ARCHIVADOR_H
@@ -91,17 +91,17 @@ Tratamiento de excepciones
 	#include <QDebug>
 
 	int main(int argc, char** argv)  {
-		QApplication a(argc, argv);
+	    QApplication a(argc, argv);
 
-		try  {
-			Archivador::abrir("./defecto.txt");
-			Archivador::almacenar("11111111");
-		}
-		catch(ExcNoArchivo e)  {
-			qDebug() << e.getMensaje();
-		}
+	    try  {
+	        Archivador::abrir("./defecto.txt");
+	        Archivador::almacenar("11111111");
+	    }
+	    catch(ExcNoArchivo e)  {
+	        qDebug() << e.getMensaje();
+	    }
 
-		return 0;
+	    return 0;
 	}
 
 
