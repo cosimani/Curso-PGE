@@ -20,8 +20,8 @@ Primer Parcial
 
 **Resolución**
 
-* `Ejercicio 1 <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase14/Ejercicio1.rar?raw=true>`_
-* `Ejercicio 2 <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase14/Ejercicio2.rar?raw=true>`_
+* `Ejercicio 1 (Resolución) <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase14/Ejercicio1.rar?raw=true>`_
+* `Ejercicio 2 (Resolución) <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase14/Ejercicio2.rar?raw=true>`_
 
 
 
