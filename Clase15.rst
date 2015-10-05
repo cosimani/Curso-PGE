@@ -104,5 +104,38 @@ Tratamiento de excepciones
 	    return 0;
 	}
 
+**Ejercicio 1:**
+
+- Modificar la clase listado para que cuando sea necesario lance la excepción ExcRango cuando se intente acceder a un index fuera de rango. Probarlo luego en la función main.
+
+.. code-block:: c++
+
+	template <class T> class Listado  {
+	private:
+	    int cantidad;
+	    int libre;
+	    T *v;
+
+	public:
+	    Listado(int n=10) : cantidad(n), libre(0), v(new T[n])  {  }
+	    bool add(T nuevo);
+
+	    T get(int i)  {
+	        if (i>=libre)
+	            throw ExcRango("Listado fuera de rango", i);
+	        return v[i];
+	    }
+
+	    int length()  {  return libre;  }
+	};
+
+	template <class T> bool Listado<T>::add(T nuevo)  {
+	    if (libre < cantidad)  {
+	        v[libre] = nuevo;
+	        libre++;
+	        return true;
+	    }
+	    return false;
+	}
 
 
