@@ -104,6 +104,12 @@ Tratamiento de excepciones
 	    return 0;
 	}
 
+### Breve video sobre excepciones:	
+	
+[![Explicación breve sobre excepciones](http://img.youtube.com/vi/wcuknro_V-w/0.jpg)](http://www.youtube.com/watch?v=wcuknro_V-w)
+	
+	
+	
 **Ejercicio 1:**
 
 - Modificar la clase listado para que cuando sea necesario lance la excepción ExcRango cuando se intente acceder a un index fuera de rango. Probarlo luego en la función main.
