@@ -108,7 +108,7 @@ Tratamiento de excepciones
 	
 [![Explicación breve sobre excepciones](http://img.youtube.com/vi/wcuknro_V-w/0.jpg)](http://www.youtube.com/watch?v=wcuknro_V-w)
 	
-	
+[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)	
 	
 **Ejercicio 1:**
 
