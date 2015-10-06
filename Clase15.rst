@@ -12,6 +12,12 @@ Tratamiento de excepciones
 
 * `Explicación por un youtuber <http://www.youtube.com/watch?v=wcuknro_V-w>`_
 
+**Excepciones de la biblioteca estándar de C++**
+
+.. figure:: images/clase15/excepciones2.png
+
+**Ejemplo creando nuestras propias clases para excepciones**
+
 .. code-block:: c++
 
 	#ifndef EXCEPCIONES_H
