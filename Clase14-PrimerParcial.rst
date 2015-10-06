@@ -18,7 +18,7 @@ Primer Parcial
 
 .. figure:: images/clase14/04.png
 
-**Resolución**
+**Resolución** :+1:
 
 * `Ejercicio 1 (Resolución) <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase14/Ejercicio1.rar?raw=true>`_
 * `Ejercicio 2 (Resolución) <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase14/Ejercicio2.rar?raw=true>`_
