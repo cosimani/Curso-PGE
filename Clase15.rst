@@ -10,7 +10,7 @@ Tratamiento de excepciones
 
 .. figure:: images/clase15/excepciones1.png
 
-* `Explicación por un youtuber) <http://www.youtube.com/watch?v=wcuknro_V-w>`_
+* `Explicación por un youtuber <http://www.youtube.com/watch?v=wcuknro_V-w>`_
 
 .. code-block:: c++
 
