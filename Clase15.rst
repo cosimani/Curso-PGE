@@ -10,6 +10,8 @@ Tratamiento de excepciones
 
 .. figure:: images/clase15/excepciones1.png
 
+* `Explicación por un youtuber) <http://www.youtube.com/watch?v=wcuknro_V-w>`_
+
 .. code-block:: c++
 
 	#ifndef EXCEPCIONES_H
@@ -103,16 +105,6 @@ Tratamiento de excepciones
 
 	    return 0;
 	}
-
-### Breve video sobre excepciones:	
-	
-[![Explicación breve sobre excepciones](http://img.youtube.com/vi/wcuknro_V-w/0.jpg)](http://www.youtube.com/watch?v=wcuknro_V-w)
-	
-[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
-
-## Demo
-
-[![Demo Doccou alpha](http://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)	
 	
 **Ejercicio 1:**
 
