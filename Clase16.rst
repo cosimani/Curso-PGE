@@ -311,5 +311,23 @@ Ejercicios para OpenGL y Procesamiento de Imágenes
 - Imágenes de Google Street View en OpenGL
 
 
+Array de punteros a función
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Los punteros a funciones se pueden agruparse en arreglos
+
+.. code-block:: c++	
+
+	int (* afptr[10])(int);    // array de 10 punteros a función
+
+- Los 10 punteros apuntan a funciones con el mismo prototipo
+- Permiten muchas variantes para invocar funciones
+
+.. code-block:: c++	
+
+	int a = afptr[n](x);
+
+
+
 
 
