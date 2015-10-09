@@ -143,6 +143,8 @@ Función callback
 
 **Ejemplo:**
 
+.. code-block:: c++
+
 	#ifndef BOTONES_H
 	#define BOTONES_H
 
