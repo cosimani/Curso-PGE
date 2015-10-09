@@ -229,11 +229,11 @@ Función callback
 	void ordenar(Ordenador::*puntero_funcion)(int * v, int n))
 	// Este método ordenará los elementos
 
-**Ejercicio 2:** Realizar la misma aplicación de la clase pasada pero que la funcionalidad de sugerencias se encuentre dentro de una clase Line
+**Ejercicio 2:** Realizar la misma aplicación de la clase pasada pero que la funcionalidad de sugerencias se encuentre dentro de una clase LineaDeTexto
 
 **Ejercicio 3:**
 
-- Realizar la misma aplicación de la clase pasada pero que las sugerencias las busque en Google
+- Agregar la funcionalidad a la clase LineaDeTexto para que busque sugerencias en Google
 - http://doc.qt.io/qt-5/qtnetwork-googlesuggest-example.html
 
 
@@ -280,5 +280,36 @@ Usabilidad
 - Los mensajes que comienzan con un código numérico y misterioso no sirven a los usuarios comunes.
 - Llamar la atención pero sin molestar al usuario.
 - Mostrar un cuadro de texto cerca del problema pero sin ocultarlo.
+
+Ejercicios para OpenGL y Procesamiento de Imágenes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Ejercicio 1:**
+
+- Crear un QCameraViewfinder promovido a QWidget
+- Un botón para capturar la imagen de la cámara
+- Con el mouse se puede dibujar encima de la imagen como un lápiz
+- Un botón para almacenar la imagen resultante.
+
+**Ejercicio 2:**
+
+- Con Archivador almacenar cada vez que se dibuja con el lápiz
+- Almacenar con el siguiente formato:
+	- Fecha y hora: 21.10.2014-20:53:42 - Píxel inicio: (153, 230) - Fin: (51, 76)
+	
+**Ejercicio 3:**
+
+- Definir métodos para realizar procesamiento de las imágenes para:
+	- Convertir a grises
+	- Llevar a negativo
+	- Eliminar algún color
+- El prototipo puede ser:
+	- QImage getGrayImage(QImage imagenOriginal);
+
+**Ejercicio 4:**
+
+- Imágenes de Google Street View en OpenGL
+
+
 
 
