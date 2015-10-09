@@ -234,7 +234,7 @@ Función callback
 **Ejercicio 3:**
 
 - Realizar la misma aplicación de la clase pasada pero que las sugerencias las busque en Google
-- http://qt-project.org/doc/qt-4.8/network-googlesuggest.html
+- http://doc.qt.io/qt-5/qtnetwork-googlesuggest-example.html
 
 
 Usabilidad
