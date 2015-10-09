@@ -223,8 +223,11 @@ Función callback
 	- Que no sea un template
 	- Que sólo mantenga elementos del tipo int
 	- Definir un método:
-		void ordenar(Ordenador::*puntero_funcion)(int * v, int n))
-		- Este método ordenará los elementos
+	
+.. code-block:: c++	
+		
+	void ordenar(Ordenador::*puntero_funcion)(int * v, int n))
+	// Este método ordenará los elementos
 
 **Ejercicio 2:** Realizar la misma aplicación de la clase pasada pero que la funcionalidad de sugerencias se encuentre dentro de una clase Line
 
