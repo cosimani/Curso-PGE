@@ -94,7 +94,7 @@ Función callback
 - Acceder (invocar), a la función que representa
 - Usarlo como parámetro de otra función.
 
-##Invocación##
+**Invocación**
 
 .. code-block:: c++
 
