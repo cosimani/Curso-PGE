@@ -326,6 +326,8 @@ Array de punteros a función
 .. code-block:: c++	
 
 	int a = afptr[n](x);
+	
+
 
 
 
