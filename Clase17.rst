@@ -212,45 +212,26 @@ Clase 17 - PGE 2015
 	    ui->leValorNuevo->clear();
 	}
 	
-	
-	
-- Esta clase tendrá distintos métodos de ordenamiento.
-- Cada método ordena un array de n cantidad de enteros
-- Definir la clase ListaDeEnteros
-	- Herede de QVector
-	- Que no sea un template
-	- Que sólo mantenga elementos del tipo int
-	- Definir un método:
-	
-.. code-block:: c++	
-		
-	void ordenar(Ordenador::*puntero_funcion)(int * v, int n))
-	// Este método ordenará los elementos
-
-**Ejercicio 2:** Realizar la misma aplicación de la clase pasada pero que la funcionalidad de sugerencias se encuentre dentro de una clase LineaDeTexto
-
-**Ejercicio 3:**
-
-- Agregar la funcionalidad a la clase LineaDeTexto para que busque sugerencias en Google
+**Ejercicio 2:** Agregar la funcionalidad de sugerencias a la clase LineaDeTexto y que dichas sugerencias las busque desde Google
 - http://doc.qt.io/qt-5/qtnetwork-googlesuggest-example.html
 
 Ejercicios para OpenGL y Procesamiento de Imágenes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Ejercicio 1:**
+**Ejercicio 3:**
 
 - Crear un QCameraViewfinder promovido a QWidget
 - Un botón para capturar la imagen de la cámara
 - Con el mouse se puede dibujar encima de la imagen como un lápiz
 - Un botón para almacenar la imagen resultante.
 
-**Ejercicio 2:**
+**Ejercicio 4:**
 
 - Con Archivador almacenar cada vez que se dibuja con el lápiz
 - Almacenar con el siguiente formato:
 	- Fecha y hora: 21.10.2014-20:53:42 - Píxel inicio: (153, 230) - Fin: (51, 76)
 	
-**Ejercicio 3:**
+**Ejercicio 5:**
 
 - Definir métodos para realizar procesamiento de las imágenes para:
 	- Convertir a grises
@@ -259,7 +240,7 @@ Ejercicios para OpenGL y Procesamiento de Imágenes
 - El prototipo puede ser:
 	- QImage getGrayImage(QImage imagenOriginal);
 
-**Ejercicio 4:**
+**Ejercicio 6:**
 
 - Imágenes de Google Street View en OpenGL
 
@@ -268,14 +249,12 @@ Usabilidad
 
 - Se refiere a la capacidad de ser comprendido, aprendido, usado y ser atractivo.
 
-
 - El concepto de usabilidad involucra:
 	- Aprendizaje
 	- Eficiencia (que se logre la tarea o meta)
 	- Recordación
 	- Manejo de errores
 	- Satisfacción
-
 
 **Mensajes de error**
 
