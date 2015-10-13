@@ -214,7 +214,7 @@ Clase 17 - PGE 2015
 	
 **Ejercicio 2:** 
 
-- Agregar la funcionalidad de sugerencias a la clase LineaDeTexto y que dichas sugerencias las busque desde Google
+- Agregar la funcionalidad de sugerencias a la clase LineaDeTexto y que dichas sugerencias las busque desde Google.
 - http://doc.qt.io/qt-5/qtnetwork-googlesuggest-example.html
 
 Ejercicios para OpenGL y Procesamiento de Imágenes
