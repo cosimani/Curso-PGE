@@ -47,6 +47,10 @@ Clase 18 - PGE 2015
 
 - Agregar la funcionalidad de sugerencias a la clase LineaDeTexto y que dichas sugerencias las busque desde Google.
 - http://doc.qt.io/qt-5/qtnetwork-googlesuggest-example.html
+- `Descargar LineaDeTexto <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase18/lineadetexto.rar?raw=true>`_
+
+
+
 
 Ejercicios para OpenGL y Procesamiento de Imágenes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
