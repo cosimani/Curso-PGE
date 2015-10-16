@@ -50,6 +50,7 @@ Clase 18 - PGE 2015
 - `Descargar LineaDeTexto desde aquí <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase18/lineadetexto.rar?raw=true>`_
 - Crear un QtChrome que permita buscar en Google la sugerencia elegida. 
 - Notar la signal que tiene disponible LineaDeTexto.
+- Para lograr la búsqueda en Google se puede usar la siguiente URL: https://www.google.com.ar/search?source=lnms&sa=X&dpr=1&q=ubp
 - Que la aplicación tenga un aspecto como:
 
 .. figure:: images/clase18/navegador.png
