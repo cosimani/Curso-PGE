@@ -5,7 +5,45 @@
 Clase 18 - PGE 2015
 ===================
 
-**Ejercicio 1:** 
+**Ejercicio 1:**
+
+- Modificar el ejercicio de la clase ListadoEnteros para usar funciones globales de ordenamiento, es decir, que no se encuentren dentro de Ordenador ni de ninguna clase.
+
+.. code-block:: c++	
+
+	class ListadoEnteros : public QVector<int>  {
+	public:
+	    void ordenar(void (*pFuncionOrdenamiento)(int *, int))  {
+	        (*pFuncionOrdenamiento)(this->data(), this->size());
+	    }
+	};
+
+.. code-block:: c++		
+	///// Desde main se puede utilizar así:
+
+    void (*ordenador)(int *, int) = &burbuja;
+
+    listado.ordenar(ordenador);
+
+
+**Ejercicio 2:**
+
+- Necesitamos conocer el rendimiento de cada algoritmo de ordenamiento midiendo su tiempo.
+- Utilizar un array de punteros a funciones que apunte a cada función global de ordenamiento.
+- Utilizar Archivador para almacenar los tiempos en un archivo.
+- Utilizar un ListadoEnteros de 50.000 números generados con qrand()
+
+.. code-block:: c++		
+
+	///// Desde main se puede utilizar así:
+
+    void (*ordenador[2])(int *, int);
+    ordenador[0] = &burbuja;
+    ordenador[1] = &insercion;
+
+    listado.ordenar(ordenador[1]);
+
+**Ejercicio 3:** 
 
 - Agregar la funcionalidad de sugerencias a la clase LineaDeTexto y que dichas sugerencias las busque desde Google.
 - http://doc.qt.io/qt-5/qtnetwork-googlesuggest-example.html
@@ -13,20 +51,20 @@ Clase 18 - PGE 2015
 Ejercicios para OpenGL y Procesamiento de Imágenes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Ejercicio 2:**
+**Ejercicio 4:**
 
 - Crear un QCameraViewfinder promovido a QWidget
 - Un botón para capturar la imagen de la cámara
 - Con el mouse se puede dibujar encima de la imagen como un lápiz
 - Un botón para almacenar la imagen resultante.
 
-**Ejercicio 3:**
+**Ejercicio 5:**
 
 - Con Archivador almacenar cada vez que se dibuja con el lápiz
 - Almacenar con el siguiente formato:
 	- Fecha y hora: 21.10.2014-20:53:42 - Píxel inicio: (153, 230) - Fin: (51, 76)
 	
-**Ejercicio 4:**
+**Ejercicio 6:**
 
 - Definir métodos para realizar procesamiento de las imágenes para:
 	- Convertir a grises
@@ -35,7 +73,7 @@ Ejercicios para OpenGL y Procesamiento de Imágenes
 - El prototipo puede ser:
 	- QImage getGrayImage(QImage imagenOriginal);
 
-**Ejercicio 5:**
+**Ejercicio 7:**
 
 - Imágenes de Google Street View en OpenGL
 
