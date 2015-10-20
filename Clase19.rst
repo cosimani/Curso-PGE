@@ -8,20 +8,20 @@ Clase 19 - PGE 2015
 Ejercicios para OpenGL y Procesamiento de Imágenes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Ejercicio 4:**
+**Ejercicio 1:**
 
 - Crear un QCameraViewfinder promovido a QWidget
 - Un botón para capturar la imagen de la cámara
 - Con el mouse se puede dibujar encima de la imagen como un lápiz
 - Un botón para almacenar la imagen resultante.
 
-**Ejercicio 5:**
+**Ejercicio 2:**
 
 - Con Archivador almacenar cada vez que se dibuja con el lápiz
 - Almacenar con el siguiente formato:
 	- Fecha y hora: 21.10.2014-20:53:42 - Píxel inicio: (153, 230) - Fin: (51, 76)
 	
-**Ejercicio 6:**
+**Ejercicio 3:**
 
 - Definir métodos para realizar procesamiento de las imágenes para:
 	- Convertir a grises
@@ -30,7 +30,7 @@ Ejercicios para OpenGL y Procesamiento de Imágenes
 - El prototipo puede ser:
 	- QImage getGrayImage(QImage imagenOriginal);
 
-**Ejercicio 7:**
+**Ejercicio 4:**
 
 - Imágenes de Google Street View en OpenGL
 
