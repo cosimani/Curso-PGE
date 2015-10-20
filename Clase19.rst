@@ -65,9 +65,19 @@ Ejercicios para OpenGL y Procesamiento de Imágenes
 
 	    painter.drawPoint(posicionMouse);
 	}
+	
+- Para capturar la pantalla se podría agregar un slot en Papel
 
+.. code-block:: c++	
 
+	// Esto captura la pantalla pero solo almacena el ultimo pixel dibujado, hay que resolverlo.
+	void Papel::slot_capturarImagen()  {
+	    QPixmap pixMap = this->grab();
+	    QImage image = pixMap.toImage();
 
+	    image.save("../imagen.png");
+	}
+	
 **Ejercicio 2:**
 
 - Con Archivador almacenar cada vez que se dibuja con el lápiz
