@@ -15,6 +15,58 @@ Ejercicios para OpenGL y Procesamiento de Imágenes
 - Con el mouse se puede dibujar encima de la imagen como un lápiz
 - Un botón para almacenar la imagen resultante.
 
+**Ayuda para este ejercicio**
+
+- A continuación un ejemplo de un widget que permite dibujar con el mouse
+
+.. code-block:: c++	
+
+	class Papel : public QWidget
+	{
+		Q_OBJECT
+	public:
+		explicit Papel(QWidget *parent = 0 );
+
+	private:
+		bool botonPresionado;
+		QPoint posicionMouse;
+
+	protected:
+		bool eventFilter(QObject *obj, QEvent *e);
+		void paintEvent(QPaintEvent *);
+	};
+
+	Papel::Papel(QWidget *parent) : QWidget(parent), botonPresionado(false)  {
+
+    this->installEventFilter(this);  // Para trabajar con eventFilter
+}
+
+.. code-block:: c++	
+
+	bool Papel::eventFilter(QObject *obj, QEvent *e)  {
+	    if (obj == this)  {
+	        if (e->type() == QEvent::MouseButtonPress) 
+	            botonPresionado = true;
+	        if (e->type() == QEvent::MouseButtonRelease) 
+	            botonPresionado = false;
+	        if (e->type() == QEvent::MouseMove)  {
+	            posicionMouse = static_cast<QMouseEvent*>(e)->pos();
+	            this->repaint(QRect(posicionMouse.x(), posicionMouse.y(), 1, 1));
+	        }
+	    }
+	    return QWidget::eventFilter(obj, e);
+	}
+
+	void Papel::paintEvent(QPaintEvent *)  {
+	    QPainter painter(this);
+
+	    painter.fillRect(0, 0, this->width(), this->height(), QBrush(QColor(255,255,255)));
+
+	    painter.drawPoint(posicionMouse);
+	}
+
+
+
 **Ejercicio 2:**
 
 - Con Archivador almacenar cada vez que se dibuja con el lápiz
