@@ -39,7 +39,7 @@ Ejercicios para OpenGL y Procesamiento de Imágenes
 .. code-block:: c++	
 	
 	Papel::Papel(QWidget *parent) : QWidget(parent), botonPresionado(false)  {
-	    this->installEventFilter(this);  // Para trabajar con eventFilter
+	    this->installEventFilter(this);  // Para trabajar con eventFilter 
 	}
 	
 	bool Papel::eventFilter(QObject *obj, QEvent *e)  {
