@@ -36,13 +36,12 @@ Ejercicios para OpenGL y Procesamiento de Imágenes
 		void paintEvent(QPaintEvent *);
 	};
 
-	Papel::Papel(QWidget *parent) : QWidget(parent), botonPresionado(false)  {
-
-    this->installEventFilter(this);  // Para trabajar con eventFilter
-}
-
 .. code-block:: c++	
-
+	
+	Papel::Papel(QWidget *parent) : QWidget(parent), botonPresionado(false)  {
+	    this->installEventFilter(this);  // Para trabajar con eventFilter
+	}
+	
 	bool Papel::eventFilter(QObject *obj, QEvent *e)  {
 	    if (obj == this)  {
 	        if (e->type() == QEvent::MouseButtonPress) 
@@ -51,6 +50,8 @@ Ejercicios para OpenGL y Procesamiento de Imágenes
 	            botonPresionado = false;
 	        if (e->type() == QEvent::MouseMove)  {
 	            posicionMouse = static_cast<QMouseEvent*>(e)->pos();
+				
+	            // Solo redibujamos el pixedl que pintamos. Esto para que no se borre lo dibujado anteriormente.				
 	            this->repaint(QRect(posicionMouse.x(), posicionMouse.y(), 1, 1));
 	        }
 	    }
