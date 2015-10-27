@@ -142,7 +142,6 @@ Ejercicios para OpenGL y Procesamiento de Imágenes
  - Los mensajes que comienzan con un código numérico y misterioso no sirven a los usuarios comunes.
  - Llamar la atención pero sin molestar al usuario.
  - Mostrar un cuadro de texto cerca del problema pero sin ocultarlo.
- 
  --->
 
  <!--- Need blank line before this line (and the .. line above).
