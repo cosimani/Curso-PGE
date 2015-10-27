@@ -99,7 +99,7 @@ Ejercicios para OpenGL y Procesamiento de Imágenes
 
 .. ..
 
- <!--- Need blank line before this line (and the .. line above).
+ <!--- Esta es la forma para ocultar texto. Ver instrucciones más abajo para ampliar.
 
  Usabilidad
  ^^^^^^^^^^
