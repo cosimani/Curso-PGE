@@ -15,6 +15,11 @@ Ejercicios con Procesamiento de Imágenes
 - A partir de esto, se realizará un seguimiento de este objeto. Dibujar un círculo o una marca cualquiera sobre este objeto.
 - **Mejora 1:** Corregir el parpadeo que tiene la imagen
 - **Mejora 2:** Corregir la orientación de la imagen
+- **Mejora 3:** Trabajar con matices para identificar color. Se puede usar el método:
+
+.. code-block:: c++	
+
+	int QColor::hue() const
 
 **Ayuda para Ejercicio 1:** 
 
