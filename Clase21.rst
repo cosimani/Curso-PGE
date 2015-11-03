@@ -31,5 +31,8 @@ Ejercicio base para el parcial
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Permite desplazarse con teclado y mouse dentro de la escena OpenGL
-
-
+- `Descargar proyecto base desde aquí <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase21/DesplazamientoEnEscena.rar?raw=true>`_
+- Tener en cuenta:
+	- Se puede pedir mirar para arriba y abajo
+	- Saltar
+	- Desplazarse hacia laterales
