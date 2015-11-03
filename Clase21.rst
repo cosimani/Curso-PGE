@@ -26,3 +26,10 @@ Temas para segundo parcial
 - OpenGL, texturas, imagen de la cámara como textura
 - No va: Seguimiento de objetos ni base de datos
 
+
+Ejercicio base para el parcial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Permite desplazarse con teclado y mouse dentro de la escena OpenGL
+
+
