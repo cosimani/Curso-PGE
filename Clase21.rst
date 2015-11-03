@@ -32,6 +32,11 @@ Ejemplo base para el parcial
 
 - Permite desplazarse con teclado y mouse dentro de la escena OpenGL
 - `Descargar proyecto base desde aquí <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase21/DesplazamientoEnEscena.rar?raw=true>`_
+- Notar lo siguiente:
+	- Método para dibujar plano horizontal y vertical
+	- Control del mouse para la rotación
+	- Teclas para el desplazamiento hacia adelante y atrás
+	- Forma de organizar las carpetas
 - Tener en cuenta:
 	- Se puede pedir mirar para arriba y abajo
 	- Saltar
