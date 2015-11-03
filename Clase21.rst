@@ -27,8 +27,8 @@ Temas para segundo parcial
 - No va: Seguimiento de objetos ni base de datos
 
 
-Ejercicio base para el parcial
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Ejemplo base para el parcial
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Permite desplazarse con teclado y mouse dentro de la escena OpenGL
 - `Descargar proyecto base desde aquí <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase21/DesplazamientoEnEscena.rar?raw=true>`_
@@ -36,3 +36,10 @@ Ejercicio base para el parcial
 	- Se puede pedir mirar para arriba y abajo
 	- Saltar
 	- Desplazarse hacia laterales
+
+Ejercicio 1
+^^^^^^^^^^^
+
+- Dentro de la escena mostrar la cámara.
+- Que permita pausar la cámara con la letra P.
+	
