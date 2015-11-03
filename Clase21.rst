@@ -17,7 +17,7 @@ Ejercicio para ONIET 2015
 Temas para segundo parcial
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- Imágenes de cámaras con QCameraViewfinder y QAbstractVideoSurface
+- Imágenes de cámaras con QCameraViewfinder y QAbstractVideoSurface (traer cámara USB si va a usar PC de laboratorio).
 - Análisis pixel a pixel, escala de grises, negativo, eliminar componente
 - Tratamiento de excepciones
 - Hilos con QThread
