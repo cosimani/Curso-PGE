@@ -1,0 +1,28 @@
+.. -*- coding: utf-8 -*-
+
+.. _rcs_subversion:
+
+Clase 21 - PGE 2015
+===================
+
+Ejercicio para ONIET 2015
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Prestar atención porque algo va a salir inspirado por este ejercicio.
+
+.. figure:: images/clase21/alfil_1.png
+
+.. figure:: images/clase21/alfil_2.png
+
+Temas para segundo parcial
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Imágenes de cámaras con QCameraViewfinder y QAbstractVideoSurface
+- Análisis pixel a pixel, escala de grises, negativo, eliminar componente
+- Tratamiento de excepciones
+- Hilos con QThread
+- Callback, punteros a funciones, punteros a métodos de clases
+- LineaDeTexto con sugerencia de Google
+- OpenGL, texturas, imagen de la cámara como textura
+- No va: Seguimiento de objetos ni base de datos
+
