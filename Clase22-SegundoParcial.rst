@@ -12,4 +12,4 @@ Recursos para Segundo parcial
 
 - Video sobre lo que se desea replicar (https://www.youtube.com/watch?v=osidxGyaquEWIk)
 
-- `LineaDeTexto <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase18/lineadetexto.rar?raw=true>`_
+- `LineaDeTexto <https://github.com/cosimani/Curso-PGE-2015/blob/master/sources/clase18/osilineadetexto.rar?raw=true>`_
