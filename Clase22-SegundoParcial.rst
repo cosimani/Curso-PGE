@@ -8,7 +8,6 @@ Clase 22 - PGE 2015
 .. ..
 
  <!--- Esta es la forma para ocultar texto. Ver instrucciones más abajo para ampliar.
-
 Recursos para Segundo parcial
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
